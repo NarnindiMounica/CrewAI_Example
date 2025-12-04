@@ -1,2 +1,5 @@
 crewai
 crewai_tools
+python-dotenv
+langchain-groq
+browserbase

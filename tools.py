@@ -1,3 +1,9 @@
-from crewai_tools import YoutubeChannelSearchTool
+import os
 
-youtube_tool=YoutubeChannelSearchTool(youtube_channel_handle="@krishnaik06")
+from dotenv import load_dotenv
+load_dotenv()
+
+browserbase_api_key = os.getenv("BROSWERBASE_API_KEY")
+from crewai_tools import BrowserbaseLoadTool
+
+browser_tool=BrowserbaseLoadTool(api_key= browserbase_api_key)
